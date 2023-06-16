@@ -35,13 +35,7 @@ Widget coinCard(context, String name, String symbol, Rate rate) {
               child: Stack(children: [
                 Align(
                   alignment: Alignment.centerLeft,
-                  child: CircleAvatar(
-                    radius: 30,
-                    backgroundColor: color2.withAlpha(100),
-                    child: FittedBox(
-                      child: Image.asset("assets/$name.png"),
-                    ),
-                  ),
+                  child: FittedBox(child: Image.asset("assets/$name.png", width: 60, height: 60)),
                 ),
                 Align(
                   alignment: Alignment.topLeft,
