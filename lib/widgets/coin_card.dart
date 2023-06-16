@@ -38,9 +38,8 @@ Widget coinCard(context, String name, String symbol, Rate rate) {
                   child: CircleAvatar(
                     radius: 30,
                     backgroundColor: color2.withAlpha(100),
-                    child: Text(
-                      name[0] + symbol[0],
-                      style: const TextStyle(fontSize: 25),
+                    child: FittedBox(
+                      child: Image.asset("assets/$name.png"),
                     ),
                   ),
                 ),
